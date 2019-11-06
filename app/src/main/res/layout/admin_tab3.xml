@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/admin"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp" />
+
+    <TextView
+        android:id="@+id/admin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hi "
+        android:layout_below="@+id/profile_image"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/admin_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@admin.com"
+        android:layout_below="@+id/admin_name"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/change_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/admin_email"
+        android:layout_alignRight="@+id/admin_email"
+        android:layout_below="@+id/admin_email"
+        android:layout_marginTop="39dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="تغيير كلمة المرور" />
+
+    <Button
+        android:id="@+id/sign_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/change_pass"
+        android:layout_alignStart="@+id/change_pass"
+        android:layout_below="@+id/change_pass"
+        android:layout_marginTop="27dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="تسجيل الخروج"
+        android:layout_alignRight="@+id/admin_email"
+        android:layout_alignEnd="@+id/admin_email"
+       />
+
+
+</RelativeLayout>

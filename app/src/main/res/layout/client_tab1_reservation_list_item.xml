@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:id="@+id/linearLayout">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:padding="13dp">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="54dp"
+                android:layout_height="70dp"
+                android:layout_above="@+id/service_expier_date"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@android:drawable/ic_menu_info_details"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.92"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.268" />
+
+            <TextView
+                android:id="@+id/FLname"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/imageView2"
+                android:layout_toStartOf="@+id/imageView2"
+                android:text="مقدم الخدمة"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.26"
+                tools:layout_editor_absoluteX="10dp" />
+
+            <TextView
+                android:id="@+id/service_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignEnd="@+id/srfi_name"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/srfi_name"
+                android:text="تاريخ الخدمة "
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/srfi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/FLname"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/FLname"
+                android:text="الخدمة"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.74"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.159"
+                tools:layout_editor_absoluteX="246dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
